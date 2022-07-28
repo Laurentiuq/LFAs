@@ -1,0 +1,66 @@
+
+Pentru a schimba inputul testat e necesar specificarea fisierului config
+
+Exercitiul2 - L = {0^n1^n2^n | n≥1}
+
+python ex2.py
+
+python ex2.py ex2_config_file string_testat
+
+
+
+Exercitiul 3 - L = {0^n1^n2^n | n≥1}
+
+python ex3.py
+
+python ex3.py ex3_config_file string_testat
+
+
+
+
+Exercitiul 4 - L={w#w|where w is a string} - w format din 0 si 1
+
+python ex4.py
+
+python ex4.py ex4_config_file string_testat
+
+
+-------------------------------------------------------------
+
+Formatul config_file pentru fiecare exercitiu este
+
+
+Sigma:
+    s1
+    s2
+    s3
+    s4
+    s5
+
+End
+
+Gamma:
+    s1
+    s2
+    s3
+    s4
+    s5
+    s6
+
+End
+
+
+Transitions:
+    q0, s1, q1, s1, s1, R, R
+    q0, s2, q4, s2, s2, R, R
+
+End
+
+# Starea de inceput este marcata prin S, iar starea de accept prin F
+
+States:
+    q0, S
+    q1
+    q4, F
+
+End

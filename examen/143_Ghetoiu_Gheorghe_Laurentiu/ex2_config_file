@@ -1,0 +1,60 @@
+#
+#comment lines
+# Q, sigma, gamma, fct tranz, q0, q_acc, q_rej
+
+Sigma:
+    0
+    1
+    2
+End
+
+Gamma:
+    0
+    1
+    2
+    x
+    y
+    z
+    i
+End
+
+
+Transitions:
+    q0, 0, q1, x, x, R, R
+    q0, y, q4, y, y, R, R
+    q1, 0, q1, 0, 0, R, R
+    q1, y, q1, y, y, R, R
+    q1, 1, q2, y, y, R, R
+    q2, 1, q2, 1, 1, R, R
+    q2, z, q2, z, z, R, R
+    q2, 2, q3, z, z, L, L
+    q3, 0, q3, 0, 0, L, L
+    q3, 1, q3, 1, 1, L, L
+    q3, y, q3, y, y, L, L
+    q3, z, q3, z, z, L, L
+    q3, x, q0, x, x, R, R
+    q4, y, q4, y, y, R, R
+    q4, z, q4, z, z, R, R
+    q4, $, q5, $, $, L, L
+End
+
+States:
+    q0, S
+    q1
+    q2
+    q3
+    q4
+    q5, F
+    q7, V
+    q8, V
+    q9, V
+    q10, V
+    q11, V
+    q12, V
+    qFinalNew, V
+
+End
+#
+#
+#
+
