@@ -1,0 +1,33 @@
+# V -nonterminal AKA variables
+# E - terminals
+# R -  V x (V || E) - dintr o variabila merge intr-o variabila sau un terminal
+# S - variabila de start - teoretic trebuie sa fie o variabila si nu un terminal
+
+variables
+
+A
+S
+
+end
+
+terminals
+
+0
+1
+
+end
+
+
+productions
+
+(A, 0A|1A)
+(S, A|*)
+
+end
+
+start point
+
+S
+
+
+end
